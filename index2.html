@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </div>
+
+    <form id="survey-form">
+
+        <label id="name-label">nama</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="enter your name" required/>
+
+        <label id="email-label">nama</label>
+        <input type="email" email="email" id="email" class="form-control" placeholder="enter your email" required/>
+
+        <label id="number-label" for="number">age <span class="clue">(optional)</span></label>
+        <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="enter your number" required/>
+        
+        <p>Which option best describes your current role?</p>
+        <select name="role" id="dropdown" class="form-control" required>
+            <option disabled selected value>select current role</option>
+            <option value="student">Student</option>
+            <option value="job">job</option>
+            <option value="learner">full time learner</option>
+            <option value="preferNo">prefer not to say</option>
+            <option value="other">Other</option>
+        </select>
+
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label ><input type="radio" name="user-recommend" value="definetly" class="input-radio" checked>definetly</label>
+        <label ><input type="radio" name="user-recommend" value="maybe" class="input-radio" checked>maybe</label>
+        <label ><input type="radio" name="user-recommend" value="not-sure" class="input-radio" checked>not-sure</label>
+        
+        <p>What is your favorite feature of freeCodeCamp?</p>
+        <select id="most-like" name="most-like" class="form-control" required>
+            <option disabled selected value>select an option</option>
+            <option value="student">challenges</option>
+            <option value="job">projects</option>
+            <option value="learner">community</option>
+            <option value="preferNo">open source</option>
+        </select>
+
+    </form>
+
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
